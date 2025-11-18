@@ -6,7 +6,7 @@ export const contact = {
   location: "Toronto, Ontario | Remote only",
   phone: "+1 (437) 243-3693",
   email: "chuck_dll@outlook.com",
-  availability: "Ready for AI Advisor interviews | December 2025 start",
+  availability: "Open to new consulting engagements | December 2025 start",
 };
 
 export const socialLinks = [
@@ -24,25 +24,25 @@ export const stats = [
 
 export const advisoryFit = [
   {
-    title: "One-person AI front line",
+    title: "Executive-facing advisor",
     expectation:
-      'Infocepts needs a "one man army" who can lead US client conversations, architect the solution, and stand up proposals without extra SMEs.',
+      "Comfortable running enterprise discovery, framing the roadmap, and packaging commercial proposals without extra handoffs.",
     proof:
-      "Currently leads AI architecture at Assent and Online Business Systems: sells the vision, scopes agentic workflows, and ships audited builds that reclaimed 20k+ hours.",
+      "Owns AI architecture at Assent and Online Business Systems—translating VP-level asks into scoped agentic workflows and audited releases that returned 20k+ hours.",
   },
   {
-    title: "Hands-on custom engineering DNA",
+    title: "Hands-on engineering DNA",
     expectation:
-      "Preference for custom app backgrounds (Python/Java/.NET) so the advisor can guide LLM engineering, not just strategy.",
+      "Guidance stays grounded in delivery reality because architecture, code, and automation work remain day-to-day responsibilities.",
     proof:
-      "Career started in software factories (TCS, Praxis, HCL) before moving into Salesforce dev; still codes Python, TypeScript, Apex, and Zapier automations powering live agentic systems.",
+      "Career started inside software factories (TCS, Praxis, HCL) before moving into Salesforce dev; still ships Python, TypeScript, Apex, and Zapier automations that power production agentic systems.",
   },
   {
-    title: "Retail & services aware",
+    title: "Retail & services fluent",
     expectation:
-      "15-17 year profiles with recent AI depth and a services background, ideally retail/CPG, plus the ability to stay at least 25% billable.",
+      "Understands compliance, retail, and services motions while staying comfortable with a 25%+ billable cadence.",
     proof:
-      "Ran digital delivery for Amstar (travel retail) and oversees 40+ SMB retail automations via Sesh; mixes advisory + delivery with a comfortable 30% billable cadence.",
+      "Ran digital delivery for Amstar (travel retail) and oversees 40+ SMB retail automations via Sesh, pairing advisory rhythm with measurable delivery outcomes.",
   },
 ] as const;
 

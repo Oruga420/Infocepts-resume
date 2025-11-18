@@ -24,9 +24,9 @@ export default function LoadingOverlay({ children }: Props) {
         {children}
       </div>
       {isLoading && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950">
-          <div className="flex flex-col items-center gap-4 text-slate-200">
-            <div className="h-16 w-16 animate-spin rounded-full border-2 border-slate-700 border-t-emerald-400" />
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/90 backdrop-blur-sm">
+          <div className="flex flex-col items-center gap-4 text-slate-500">
+            <div className="h-16 w-16 animate-spin rounded-full border-2 border-slate-200 border-t-slate-900" />
             <span className="text-sm uppercase tracking-[0.3em] text-slate-400">
               Loading
             </span>

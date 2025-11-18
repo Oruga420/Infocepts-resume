@@ -56,11 +56,11 @@ function SocialButton({
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="group relative inline-flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-white/10 text-slate-200 transition-all duration-300 hover:-translate-y-1 hover:text-emerald-300"
+      className="group relative inline-flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-slate-200 bg-white text-slate-600 transition-all duration-300 hover:-translate-y-1 hover:text-slate-900"
       aria-label={label}
     >
       {icons[icon]}
-      <span className="pointer-events-none absolute inset-0 -z-10 scale-0 rounded-2xl bg-emerald-400/20 blur-2xl transition-transform duration-300 group-hover:scale-125" />
+      <span className="pointer-events-none absolute inset-0 -z-10 scale-0 rounded-2xl bg-slate-900/10 blur-xl transition-transform duration-300 group-hover:scale-110" />
     </Link>
   );
 }
@@ -68,50 +68,34 @@ function SocialButton({
 export default function Home() {
   return (
     <LoadingOverlay>
-      <div className="relative isolate overflow-hidden bg-slate-950 px-4 pb-16 pt-12 text-slate-100 sm:px-6 lg:px-0">
-        <div className="mx-auto flex w-full max-w-6xl flex-col gap-16 rounded-[40px] bg-white/5 p-8 backdrop-blur-xl lg:p-12">
+      <div className="relative isolate overflow-hidden bg-gradient-to-b from-white via-white to-slate-50 px-4 pb-16 pt-12 text-slate-900 sm:px-6 lg:px-0">
+        <div className="mx-auto flex w-full max-w-6xl flex-col gap-16 rounded-[40px] border border-slate-200 bg-white p-8 shadow-[0_40px_120px_rgba(15,23,42,0.08)] lg:p-12">
           <header className="grid gap-10 lg:grid-cols-[2fr,1fr] lg:items-start">
             <div className="space-y-6">
-              <p className="text-sm uppercase tracking-[0.4em] text-emerald-300">
-                Tailored for the Infocepts AI Advisor brief (Nov 3, 2025)
+              <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
+                Executive profile & delivery snapshot
               </p>
               <div>
-                <h1 className="text-4xl font-semibold leading-tight text-white sm:text-5xl">
+                <h1 className="text-4xl font-semibold leading-tight text-slate-900 sm:text-5xl">
                   {contact.name}
                 </h1>
-                <p className="mt-3 text-xl text-slate-300">{contact.title}</p>
+                <p className="mt-3 text-xl text-slate-600">{contact.title}</p>
               </div>
-              <p className="text-lg text-slate-200">{contact.focusLine}</p>
-              <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+              <p className="text-lg text-slate-600">{contact.focusLine}</p>
+              <div className="flex flex-wrap gap-4 text-sm text-slate-600">
                 <span>{contact.location}</span>
                 <span>|</span>
                 <span>{contact.phone}</span>
                 <span>|</span>
                 <Link
                   href={`mailto:${contact.email}`}
-                  className="text-emerald-300 underline-offset-4 hover:text-emerald-200"
+                  className="text-slate-900 underline underline-offset-4 hover:text-slate-600"
                 >
                   {contact.email}
                 </Link>
               </div>
-              <div className="flex flex-wrap gap-4 text-sm text-slate-400">
+              <div className="flex flex-wrap gap-4 text-sm text-slate-500">
                 <span>{contact.availability}</span>
-              </div>
-              <div className="flex flex-wrap gap-4">
-                <Link
-                  href="mailto:chuck_dll@outlook.com?subject=AI%20Advisor%20Conversation"
-                  className="inline-flex items-center justify-center rounded-2xl bg-emerald-400 px-6 py-3 text-base font-medium text-slate-950 shadow-[0_0_35px_rgba(16,185,129,0.35)] transition hover:-translate-y-0.5 hover:bg-emerald-300"
-                >
-                  Book a working session
-                </Link>
-                <Link
-                  href="https://www.eloruga.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center justify-center rounded-2xl border border-white/20 px-6 py-3 text-base font-medium text-white transition hover:-translate-y-0.5 hover:border-emerald-300 hover:text-emerald-200"
-                >
-                  Explore build logs
-                </Link>
               </div>
               <div className="flex gap-3">
                 {socialLinks.map((link) => (
@@ -119,21 +103,21 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className="rounded-3xl border border-white/10 bg-slate-900/50 p-6 shadow-2xl shadow-emerald-500/10">
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-400">
+            <div className="rounded-3xl border border-slate-200 bg-slate-50/80 p-6 shadow-inner shadow-slate-200/80">
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">
                 Quick signal
               </p>
               <div className="mt-6 grid gap-5">
                 {stats.map((stat) => (
                   <div
                     key={stat.label}
-                    className="rounded-2xl border border-white/5 bg-white/5 px-4 py-5"
+                    className="rounded-2xl border border-slate-200 bg-white px-4 py-5"
                   >
-                    <p className="text-3xl font-semibold text-white">
+                    <p className="text-3xl font-semibold text-slate-900">
                       {stat.value}
                     </p>
-                    <p className="text-sm text-slate-400">{stat.label}</p>
-                    <p className="text-sm text-slate-300">{stat.detail}</p>
+                    <p className="text-sm text-slate-500">{stat.label}</p>
+                    <p className="text-sm text-slate-600">{stat.detail}</p>
                   </div>
                 ))}
               </div>
@@ -142,26 +126,26 @@ export default function Home() {
 
           <section>
             <div className="flex flex-col gap-3">
-              <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
-                Fit check
+              <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
+                Advisory focus
               </p>
-              <h2 className="text-3xl font-semibold text-white">
-                Why this profile maps to the AI Advisor scorecard
+              <h2 className="text-3xl font-semibold text-slate-900">
+                How I support AI-first leadership teams
               </h2>
             </div>
             <div className="mt-8 grid gap-6 lg:grid-cols-3">
               {advisoryFit.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 via-slate-900/80 to-slate-950/90 p-6 shadow-[0_20px_60px_rgba(15,23,42,0.45)]"
+                  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_25px_60px_rgba(15,23,42,0.08)]"
                 >
-                  <p className="text-sm font-semibold text-emerald-300">
+                  <p className="text-sm font-semibold text-slate-900">
                     {item.title}
                   </p>
-                  <p className="mt-3 text-sm text-slate-400">
+                  <p className="mt-3 text-sm text-slate-500">
                     {item.expectation}
                   </p>
-                  <p className="mt-4 text-base text-slate-100">{item.proof}</p>
+                  <p className="mt-4 text-base text-slate-600">{item.proof}</p>
                 </div>
               ))}
             </div>
@@ -169,38 +153,38 @@ export default function Home() {
 
           <section className="space-y-6">
             <div>
-              <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
+              <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
                 Recent impact
               </p>
-              <h2 className="text-3xl font-semibold text-white">
-                Hands-on GenAI delivery that keeps advisors billable
+              <h2 className="text-3xl font-semibold text-slate-900">
+                Hands-on GenAI delivery with measurable outcomes
               </h2>
-              <p className="mt-2 text-slate-300">
-                Each engagement mixes proposal ownership, design, and
-                production builds - exactly what the Infocepts transcript called
-                out.
+              <p className="mt-2 text-slate-600">
+                Each engagement blends proposal ownership, design authority, and
+                production builds so leadership teams see value without extra
+                coordination layers.
               </p>
             </div>
             <div className="grid gap-6 lg:grid-cols-3">
               {recentWins.map((win) => (
                 <article
                   key={win.company}
-                  className="flex h-full flex-col rounded-3xl border border-white/10 bg-white/[0.04] p-6"
+                  className="flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_20px_55px_rgba(15,23,42,0.07)]"
                 >
                   <div>
-                    <p className="text-sm uppercase tracking-[0.2em] text-slate-400">
+                    <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
                       {win.period}
                     </p>
-                    <h3 className="mt-2 text-2xl font-semibold text-white">
+                    <h3 className="mt-2 text-2xl font-semibold text-slate-900">
                       {win.company}
                     </h3>
-                    <p className="text-sm text-emerald-300">{win.role}</p>
-                    <p className="mt-3 text-base text-slate-200">{win.blurb}</p>
+                    <p className="text-sm text-slate-600">{win.role}</p>
+                    <p className="mt-3 text-base text-slate-600">{win.blurb}</p>
                   </div>
-                  <ul className="mt-4 space-y-3 text-sm text-slate-300">
+                  <ul className="mt-4 space-y-3 text-sm text-slate-600">
                     {win.bullets.map((bullet) => (
                       <li key={bullet} className="flex gap-2">
-                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-300" />
+                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-slate-900" />
                         <span>{bullet}</span>
                       </li>
                     ))}
@@ -211,49 +195,49 @@ export default function Home() {
           </section>
 
           <section className="grid gap-8 lg:grid-cols-[1.2fr,0.8fr]">
-            <div className="rounded-3xl border border-white/10 bg-slate-900/60 p-6">
-              <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
+            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
                 Career foundation
               </p>
-              <h2 className="mt-2 text-3xl font-semibold text-white">
+              <h2 className="mt-2 text-3xl font-semibold text-slate-900">
                 Services DNA that predates the GenAI wave
               </h2>
-              <div className="mt-6 space-y-6 border-l border-white/10 pl-6">
+              <div className="mt-6 space-y-6 border-l border-slate-200 pl-6">
                 {timeline.map((item) => (
                   <div key={item.company} className="space-y-2">
-                    <div className="flex items-center gap-2 text-sm text-slate-400">
-                      <span className="h-2 w-2 rounded-full bg-emerald-300" />
+                    <div className="flex items-center gap-2 text-sm text-slate-500">
+                      <span className="h-2 w-2 rounded-full bg-slate-900" />
                       {item.period}
                     </div>
-                    <p className="text-lg font-semibold text-white">
+                    <p className="text-lg font-semibold text-slate-900">
                       {item.company}
                     </p>
-                    <p className="text-sm text-emerald-200">{item.role}</p>
-                    <p className="text-sm text-slate-300">{item.summary}</p>
+                    <p className="text-sm text-slate-600">{item.role}</p>
+                    <p className="text-sm text-slate-600">{item.summary}</p>
                   </div>
                 ))}
               </div>
             </div>
             <div className="space-y-6">
-              <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
-                <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
+              <div className="rounded-3xl border border-slate-200 bg-white p-6">
+                <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
                   AI stack
                 </p>
-                <ul className="mt-4 space-y-3 text-sm text-slate-200">
+                <ul className="mt-4 space-y-3 text-sm text-slate-700">
                   {skills.aiStack.map((item) => (
-                    <li key={item} className="rounded-xl bg-slate-900/60 px-4 py-3">
+                    <li key={item} className="rounded-xl bg-slate-50 px-4 py-3">
                       {item}
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
-                <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
+              <div className="rounded-3xl border border-slate-200 bg-white p-6">
+                <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
                   Platforms & methods
                 </p>
-                <ul className="mt-4 space-y-3 text-sm text-slate-200">
+                <ul className="mt-4 space-y-3 text-sm text-slate-700">
                   {skills.platforms.map((item) => (
-                    <li key={item} className="rounded-xl bg-slate-900/60 px-4 py-3">
+                    <li key={item} className="rounded-xl bg-slate-50 px-4 py-3">
                       {item}
                     </li>
                   ))}
@@ -263,49 +247,49 @@ export default function Home() {
           </section>
 
           <section className="grid gap-8 lg:grid-cols-3">
-            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
-              <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6">
+              <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
                 Operating model
               </p>
-              <ul className="mt-4 space-y-3 text-sm text-slate-200">
+              <ul className="mt-4 space-y-3 text-sm text-slate-700">
                 {skills.operatingModel.map((item) => (
-                  <li key={item} className="rounded-xl bg-slate-900/60 px-4 py-3">
+                  <li key={item} className="rounded-xl bg-slate-50 px-4 py-3">
                     {item}
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
-              <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6">
+              <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
                 Credentials
               </p>
-              <ul className="mt-4 space-y-3 text-sm text-slate-200">
+              <ul className="mt-4 space-y-3 text-sm text-slate-700">
                 {skills.certifications.map((item) => (
-                  <li key={item} className="rounded-xl bg-slate-900/60 px-4 py-3">
+                  <li key={item} className="rounded-xl bg-slate-50 px-4 py-3">
                     {item}
                   </li>
                 ))}
               </ul>
-              <div className="mt-4 space-y-2 text-sm text-slate-300">
+              <div className="mt-4 space-y-2 text-sm text-slate-600">
                 <p>{education.school}</p>
                 <p>{education.degree}</p>
                 <p>{education.period}</p>
               </div>
             </div>
-            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
-              <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6">
+              <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
                 Languages
               </p>
-              <ul className="mt-4 space-y-3 text-sm text-slate-200">
+              <ul className="mt-4 space-y-3 text-sm text-slate-700">
                 {languages.map((language) => (
-                  <li key={language} className="rounded-xl bg-slate-900/60 px-4 py-3">
+                  <li key={language} className="rounded-xl bg-slate-50 px-4 py-3">
                     {language}
                   </li>
                 ))}
               </ul>
-              <div className="mt-6 rounded-2xl border border-emerald-400/40 bg-emerald-400/10 px-4 py-3 text-xs uppercase tracking-[0.3em] text-emerald-200">
-                Services background | Retail + travel delivery | Ready for 25%+
-                billable mix
+              <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs uppercase tracking-[0.3em] text-slate-600">
+                Services background | Retail + travel delivery | Comfortable at
+                25%+ billable mix
               </div>
             </div>
           </section>

@@ -1,14 +1,14 @@
-## Infocepts Resume
+## Alejandro Resume
 
-Tailored site for Alejandro De La Mora that positions his profile against the Infocepts AI Advisor search (Nov 3, 2025 transcript). Built with Next.js 16, React 19, Tailwind CSS v4, and a custom data layer so content changes never require layout rewrites.
+Single-page profile for Alejandro De La Mora, built with Next.js 16, React 19, Tailwind CSS v4, and a structured data layer so copy changes never require layout rewrites. The latest iteration shifts to a white-forward palette and neutral, professional language fit for any advisory conversation.
 
 ### Content Highlights
 
-- **Fit-first hero**: Signals location, availability, quick stats, plus CTA and hover-animated buttons for GitHub / site / LinkedIn.
-- **Role alignment section**: Maps experience to the “one-person AI front line” requirement pulled from the hiring call.
+- **Hero + quick signal**: Location, contact details, readiness, and KPI tiles surface at a glance—paired with a clean CTA stack.
+- **Advisory focus**: Three-card narrative that explains how Alejandro partners with executive teams without referencing a specific requisition.
 - **Impact grid**: Assent, Sesh, and OBS engagements with concrete LLM tooling, RAG, and Agentforce examples.
-- **Timeline + skills**: Services pedigree, AI stack, certifications, and languages shown as modular cards.
-- **Micro-interactions**: Gradient grid background, glassmorphism containers, animated loader, and glowing icon hovers.
+- **Timeline + skills**: Services pedigree, AI stack, certifications, and languages presented as modular cards.
+- **Polished UX**: White-glass layout, subtle grid textures, and a lightweight loading overlay keep the experience premium.
 
 ### Local Development
 

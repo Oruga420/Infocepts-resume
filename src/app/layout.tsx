@@ -13,15 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alejandro De La Mora | AI Advisor & GenAI Architect",
+  title: "Alejandro De La Mora | AI Solutions Architect",
   description:
-    "AI Solutions Architect focused on retail and compliance programs. 15+ years blending Salesforce, automation, and GenAI for production workloads.",
+    "AI leader focused on retail, travel, and compliance programs. Blends Salesforce, automation, and GenAI for production workloads.",
   openGraph: {
-    title: "Alejandro De La Mora | AI Advisor",
+    title: "Alejandro De La Mora | AI Solutions Architect",
     description:
       "Retail-focused GenAI architect with 100+ launches and a services-first background.",
     url: "https://www.eloruga.com",
-    siteName: "Alejandro De La Mora | Infocepts AI Advisor Fit",
+    siteName: "Alejandro De La Mora | AI Solutions Architect",
   },
 };
 

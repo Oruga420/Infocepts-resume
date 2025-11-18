@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #010617;
-  --foreground: #f8fafc;
+  --background: #f8fafc;
+  --foreground: #0f172a;
 }
 
 @theme inline {
@@ -16,10 +16,10 @@ body {
   min-height: 100vh;
   margin: 0;
   background:
-    radial-gradient(circle at 10% 20%, rgba(15, 118, 110, 0.35), transparent 45%),
-    radial-gradient(circle at 80% 0%, rgba(59, 130, 246, 0.18), transparent 40%),
-    radial-gradient(circle at 50% 80%, rgba(14, 165, 233, 0.2), transparent 45%),
-    #010617;
+    radial-gradient(circle at 12% 18%, rgba(15, 118, 110, 0.12), transparent 45%),
+    radial-gradient(circle at 78% 0%, rgba(59, 130, 246, 0.08), transparent 38%),
+    radial-gradient(circle at 50% 80%, rgba(148, 163, 184, 0.15), transparent 45%),
+    #f8fafc;
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
@@ -30,10 +30,10 @@ body::before {
   position: fixed;
   inset: 0;
   background-image: linear-gradient(
-      rgba(148, 163, 184, 0.05) 1px,
+      rgba(15, 23, 42, 0.05) 1px,
       transparent 1px
     ),
-    linear-gradient(90deg, rgba(148, 163, 184, 0.05) 1px, transparent 1px);
+    linear-gradient(90deg, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: radial-gradient(circle at center, black, transparent 70%);
   pointer-events: none;
