@@ -1,3 +1,4 @@
+import type { ReactElement } from "react";
 import Link from "next/link";
 import LoadingOverlay from "@/components/LoadingOverlay";
 import {
@@ -14,7 +15,7 @@ import {
 
 type IconName = (typeof socialLinks)[number]["icon"];
 
-const icons: Record<IconName, JSX.Element> = {
+const icons: Record<IconName, ReactElement> = {
   github: (
     <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5">
       <path
