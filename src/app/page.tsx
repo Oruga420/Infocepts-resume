@@ -56,7 +56,7 @@ function SocialButton({
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="group relative inline-flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-slate-200 bg-white text-slate-600 transition-all duration-300 hover:-translate-y-1 hover:text-slate-900"
+      className="group relative inline-flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border-2 border-[#014f86] bg-white text-slate-600 transition-all duration-300 hover:-translate-y-1 hover:text-slate-900"
       aria-label={label}
     >
       {icons[icon]}
@@ -69,7 +69,7 @@ export default function Home() {
   return (
     <LoadingOverlay>
       <div className="relative isolate overflow-hidden bg-gradient-to-b from-white via-white to-slate-50 px-4 pb-16 pt-12 text-slate-900 sm:px-6 lg:px-0">
-        <div className="mx-auto flex w-full max-w-6xl flex-col gap-16 rounded-[40px] border border-slate-200 bg-white p-8 shadow-[0_40px_120px_rgba(15,23,42,0.08)] lg:p-12">
+        <div className="mx-auto flex w-full max-w-6xl flex-col gap-16 rounded-[40px] border-2 border-[#014f86] bg-white p-8 shadow-[0_40px_120px_rgba(15,23,42,0.08)] lg:p-12">
           <header className="grid gap-10 lg:grid-cols-[2fr,1fr] lg:items-start">
             <div className="space-y-6">
               <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
@@ -103,7 +103,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className="rounded-3xl border border-slate-200 bg-slate-50/80 p-6 shadow-inner shadow-slate-200/80">
+            <div className="rounded-3xl border-2 border-[#014f86] bg-slate-50/80 p-6 shadow-inner shadow-slate-200/80">
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">
                 Quick signal
               </p>
@@ -111,7 +111,7 @@ export default function Home() {
                 {stats.map((stat) => (
                   <div
                     key={stat.label}
-                    className="rounded-2xl border border-slate-200 bg-white px-4 py-5"
+                    className="rounded-2xl border-2 border-[#014f86] bg-white px-4 py-5"
                   >
                     <p className="text-3xl font-semibold text-slate-900">
                       {stat.value}
@@ -137,7 +137,7 @@ export default function Home() {
               {advisoryFit.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_25px_60px_rgba(15,23,42,0.08)]"
+                  className="rounded-3xl border-2 border-[#014f86] bg-white p-6 shadow-[0_25px_60px_rgba(15,23,42,0.08)]"
                 >
                   <p className="text-sm font-semibold text-slate-900">
                     {item.title}
@@ -169,7 +169,7 @@ export default function Home() {
               {recentWins.map((win) => (
                 <article
                   key={win.company}
-                  className="flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_20px_55px_rgba(15,23,42,0.07)]"
+                  className="flex h-full flex-col rounded-3xl border-2 border-[#014f86] bg-white p-6 shadow-[0_20px_55px_rgba(15,23,42,0.07)]"
                 >
                   <div>
                     <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
@@ -195,14 +195,14 @@ export default function Home() {
           </section>
 
           <section className="grid gap-8 lg:grid-cols-[1.2fr,0.8fr]">
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+            <div className="rounded-3xl border-2 border-[#014f86] bg-slate-50 p-6">
               <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
                 Career foundation
               </p>
               <h2 className="mt-2 text-3xl font-semibold text-slate-900">
                 Services DNA that predates the GenAI wave
               </h2>
-              <div className="mt-6 space-y-6 border-l border-slate-200 pl-6">
+              <div className="mt-6 space-y-6 border-l-2 border-[#014f86] pl-6">
                 {timeline.map((item) => (
                   <div key={item.company} className="space-y-2">
                     <div className="flex items-center gap-2 text-sm text-slate-500">
@@ -219,7 +219,7 @@ export default function Home() {
               </div>
             </div>
             <div className="space-y-6">
-              <div className="rounded-3xl border border-slate-200 bg-white p-6">
+              <div className="rounded-3xl border-2 border-[#014f86] bg-white p-6">
                 <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
                   AI stack
                 </p>
@@ -231,7 +231,7 @@ export default function Home() {
                   ))}
                 </ul>
               </div>
-              <div className="rounded-3xl border border-slate-200 bg-white p-6">
+              <div className="rounded-3xl border-2 border-[#014f86] bg-white p-6">
                 <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
                   Platforms & methods
                 </p>
@@ -247,7 +247,7 @@ export default function Home() {
           </section>
 
           <section className="grid gap-8 lg:grid-cols-3">
-            <div className="rounded-3xl border border-slate-200 bg-white p-6">
+            <div className="rounded-3xl border-2 border-[#014f86] bg-white p-6">
               <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
                 Operating model
               </p>
@@ -259,7 +259,7 @@ export default function Home() {
                 ))}
               </ul>
             </div>
-            <div className="rounded-3xl border border-slate-200 bg-white p-6">
+            <div className="rounded-3xl border-2 border-[#014f86] bg-white p-6">
               <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
                 Credentials
               </p>
@@ -276,7 +276,7 @@ export default function Home() {
                 <p>{education.period}</p>
               </div>
             </div>
-            <div className="rounded-3xl border border-slate-200 bg-white p-6">
+            <div className="rounded-3xl border-2 border-[#014f86] bg-white p-6">
               <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
                 Languages
               </p>
@@ -287,7 +287,7 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs uppercase tracking-[0.3em] text-slate-600">
+              <div className="mt-6 rounded-2xl border-2 border-[#014f86] bg-slate-50 px-4 py-3 text-xs uppercase tracking-[0.3em] text-slate-600">
                 Services background | Retail + travel delivery | Comfortable at
                 25%+ billable mix
               </div>
