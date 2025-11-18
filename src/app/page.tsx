@@ -1,6 +1,7 @@
 import type { ReactElement } from "react";
 import Link from "next/link";
 import LoadingOverlay from "@/components/LoadingOverlay";
+import DownloadPdfButton from "@/components/DownloadPdfButton";
 import {
   advisoryFit,
   contact,
@@ -97,10 +98,11 @@ export default function Home() {
               <div className="flex flex-wrap gap-4 text-sm text-slate-500">
                 <span>{contact.availability}</span>
               </div>
-              <div className="flex gap-3">
+              <div className="flex flex-wrap items-center gap-3">
                 {socialLinks.map((link) => (
                   <SocialButton key={link.label} {...link} />
                 ))}
+                <DownloadPdfButton />
               </div>
             </div>
             <div className="rounded-3xl border-2 border-[#014f86] bg-slate-50/80 p-6 shadow-inner shadow-slate-200/80">
