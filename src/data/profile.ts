@@ -5,7 +5,7 @@ export const contact = {
     "A GenAI native with 15+ years blending Salesforce, automation, and custom engineering for retail, travel, and compliance programs.",
   location: "Toronto, Ontario | Remote only",
   phone: "+1 (437) 243-3693",
-  email: "chuck_dll@outlook.com",
+  email: "alex@seshwithfriends.org",
   availability: "Open to new consulting engagements | December 2025 start",
 };
 
