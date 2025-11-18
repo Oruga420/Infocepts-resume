@@ -70,8 +70,8 @@ export default function Home() {
   return (
     <LoadingOverlay>
       <div className="relative isolate overflow-hidden bg-gradient-to-b from-white via-white to-slate-50 px-4 pb-16 pt-12 text-slate-900 sm:px-6 lg:px-0">
-        <div className="mx-auto flex w-full max-w-6xl flex-col gap-16 rounded-[40px] border-2 border-[#014f86] bg-white p-8 shadow-[0_40px_120px_rgba(15,23,42,0.08)] lg:p-12">
-          <header className="grid gap-10 lg:grid-cols-[2fr,1fr] lg:items-start">
+        <div className="print-frame mx-auto flex w-full max-w-6xl flex-col gap-16 rounded-[40px] border-2 border-[#014f86] bg-white p-8 shadow-[0_40px_120px_rgba(15,23,42,0.08)] lg:p-12">
+          <header className="print-avoid grid gap-10 lg:grid-cols-[2fr,1fr] lg:items-start">
             <div className="space-y-6">
               <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
                 Executive profile & delivery snapshot
@@ -126,7 +126,7 @@ export default function Home() {
             </div>
           </header>
 
-          <section>
+          <section className="print-avoid">
             <div className="flex flex-col gap-3">
               <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
                 Advisory focus
@@ -153,7 +153,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="space-y-6">
+          <section className="print-avoid space-y-6">
             <div>
               <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
                 Recent impact
@@ -196,7 +196,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="grid gap-8 lg:grid-cols-[1.2fr,0.8fr]">
+          <section className="print-avoid grid gap-8 lg:grid-cols-[1.2fr,0.8fr]">
             <div className="rounded-3xl border-2 border-[#014f86] bg-slate-50 p-6">
               <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
                 Career foundation
@@ -248,7 +248,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="grid gap-8 lg:grid-cols-3">
+          <section className="print-avoid grid gap-8 lg:grid-cols-3">
             <div className="rounded-3xl border-2 border-[#014f86] bg-white p-6">
               <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
                 Operating model
